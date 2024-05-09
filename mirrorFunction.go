@@ -6,6 +6,7 @@ func vowelMirror(s string) string {
 	vowels := []rune{'a', 'e', 'i', 'o', 'u'}
 	rnSlc := []rune(s)
 
+	//capture vowels in string
 	for i := 0; i < len(rnSlc); i++ {
 		for j := 0; j < len(vowels); j++ {
 			if rnSlc[i] == vowels[j] || rnSlc[i] == vowels[j]-32 {
@@ -14,6 +15,7 @@ func vowelMirror(s string) string {
 		}
 	}
 
+	//switch vowels to mirror
 	for i := 0; i < len(rnSlc); i++ {
 		for j := 0; j < len(contVowels); j++ {
 			if contVowels[j] == rnSlc[i] {
