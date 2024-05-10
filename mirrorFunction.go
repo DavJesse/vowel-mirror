@@ -15,7 +15,7 @@ func vowelMirror(s string) string {
 		}
 	}
 
-	//switch vowels to mirror
+	//switch vowel to mirror
 	for i := 0; i < len(rnSlc); i++ {
 		for j := 0; j < len(contVowels); j++ {
 			if contVowels[j] == rnSlc[i] {
